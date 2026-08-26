@@ -101,6 +101,7 @@ src="https://www.facebook.com/tr?id=2910458736020350&ev=PageView&noscript=1"
   .cta-btn {
     margin-top: 34px;
     background: linear-gradient(90deg, #0088cc, #2ee6a6);
+    background-size: 200% auto;
     color: #0b0f1a;
     font-weight: 700;
     font-size: 17px;
@@ -108,9 +109,23 @@ src="https://www.facebook.com/tr?id=2910458736020350&ev=PageView&noscript=1"
     border-radius: 40px;
     text-decoration: none;
     box-shadow: 0 8px 24px rgba(46, 230, 166, 0.25);
-    transition: transform 0.2s ease;
+    transition: all 0.3s ease;
+    animation: pulse-glow 2s infinite;
+    position: relative;
   }
-  .cta-btn:hover { transform: translateY(-2px); }
+  .cta-btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    background-position: right center;
+    box-shadow: 0 12px 32px rgba(46, 230, 166, 0.5);
+  }
+  .cta-btn:active {
+    transform: translateY(-1px) scale(0.98);
+  }
+  @keyframes pulse-glow {
+    0% { box-shadow: 0 8px 24px rgba(46, 230, 166, 0.25); }
+    50% { box-shadow: 0 8px 32px rgba(46, 230, 166, 0.55); }
+    100% { box-shadow: 0 8px 24px rgba(46, 230, 166, 0.25); }
+  }
   .cta-hint {
     margin-top: 10px;
     font-size: 12px;
@@ -178,7 +193,7 @@ src="https://www.facebook.com/tr?id=2910458736020350&ev=PageView&noscript=1"
     <div class="stat"><b>Free</b><span>To Access</span></div>
   </div>
 
-  <a class="cta-btn" href="https://t.me/+Nm17S2z6dbE1Yjc1" target="_blank" rel="noopener">
+  <a class="cta-btn" href="https://t.me/+EMwQiEXRTOBhNzRl" target="_blank" rel="noopener">
     Join Trader Pro
   </a>
   <div class="cta-hint">Tap to open in Telegram</div>
