@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Trader Pro - Telegram Channel</title>
+<title>Trader Munaaf - Telegram Channel</title>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -22,117 +22,170 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2910458736020350&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(180deg, #0b0f1a 0%, #10162a 100%);
+    background: radial-gradient(circle at 50% 0%, #0f2418 0%, #050e08 55%, #030805 100%);
     color: #fff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
   }
+
+  /* Bar chart icon */
+  .chart-icon {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin-top: 34px;
+    height: 40px;
+  }
+  .chart-icon div { width: 6px; border-radius: 3px; }
+  .chart-icon div:nth-child(1){ height: 16px; background:#ff5252; }
+  .chart-icon div:nth-child(2){ height: 28px; background:#2ee67a; }
+  .chart-icon div:nth-child(3){ height: 18px; background:#ff5252; }
+  .chart-icon div:nth-child(4){ height: 38px; background:#2ee67a; }
+  .chart-icon div:nth-child(5){ height: 24px; background:#ff5252; }
+  .chart-icon div:nth-child(6){ height: 34px; background:#2ee67a; }
+
   .badge {
-    margin-top: 24px;
-    background: rgba(0, 200, 120, 0.12);
-    border: 1px solid rgba(0, 200, 120, 0.4);
-    color: #2ee6a6;
+    margin-top: 18px;
+    background: rgba(0, 200, 120, 0.08);
+    border: 1px solid rgba(46, 230, 122, 0.5);
+    color: #4be89a;
     font-size: 12px;
-    letter-spacing: 1px;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-weight: 600;
-  }
-  .logo {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    margin-top: 28px;
-    object-fit: cover;
-    border: 3px solid #2ee6a6;
-    background: #1a2036;
-  }
-  h1 {
-    margin-top: 20px;
-    font-size: 34px;
     letter-spacing: 2px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+  }
+
+  .avatar-wrap {
+    margin-top: 30px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2ee67a;
+    box-shadow: 0 0 25px rgba(46, 230, 122, 0.45);
+    overflow: hidden;
+    background: #0c1a12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    margin-top: 22px;
+    font-size: 30px;
+    letter-spacing: 1px;
     font-weight: 800;
     text-align: center;
-    background: linear-gradient(90deg, #2ee6a6, #4fc3f7);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
+  h1 .white { color: #fff; }
+  h1 .green { color: #2ee67a; }
+
   .subtitle {
-    margin-top: 8px;
-    font-size: 16px;
+    margin-top: 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
     color: #b8c0d9;
     text-align: center;
+    font-weight: 600;
   }
+
   .description {
-    max-width: 480px;
-    margin: 18px 20px 0;
+    max-width: 420px;
+    margin: 20px 24px 0;
     font-size: 14px;
-    line-height: 1.6;
-    color: #9aa4c4;
+    line-height: 1.7;
+    color: #a7b0bf;
     text-align: center;
   }
+  .description b { color: #e6e6e6; }
+
   .stats {
     display: flex;
-    gap: 28px;
-    margin-top: 28px;
+    gap: 14px;
+    margin-top: 30px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 20px;
   }
   .stat {
     text-align: center;
+    border: 1px solid rgba(46, 230, 122, 0.25);
+    border-radius: 12px;
+    padding: 14px 22px;
+    background: rgba(46, 230, 122, 0.04);
+    min-width: 90px;
   }
   .stat b {
     display: block;
-    font-size: 18px;
-    color: #2ee6a6;
+    font-size: 17px;
+    color: #2ee67a;
   }
   .stat span {
-    font-size: 12px;
-    color: #8892b0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #9aa4b2;
   }
+
   .cta-btn {
-    margin-top: 34px;
-    background: linear-gradient(90deg, #0088cc, #2ee6a6);
-    background-size: 200% auto;
-    color: #0b0f1a;
-    font-weight: 700;
-    font-size: 17px;
-    padding: 16px 44px;
-    border-radius: 40px;
+    margin-top: 36px;
+    background: linear-gradient(180deg, #4ade80, #22c55e);
+    color: #06210f;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 10px 34px 10px 10px;
+    border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 8px 24px rgba(46, 230, 166, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 0 30px rgba(46, 230, 122, 0.55);
     transition: all 0.3s ease;
     animation: pulse-glow 2s infinite;
-    position: relative;
   }
+  .cta-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background: #06210f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-btn svg { width: 18px; height: 18px; fill: #4ade80; margin-left: -1px; }
   .cta-btn:hover {
     transform: translateY(-4px) scale(1.05);
-    background-position: right center;
-    box-shadow: 0 12px 32px rgba(46, 230, 166, 0.5);
+    box-shadow: 0 0 45px rgba(46, 230, 122, 0.85);
   }
-  .cta-btn:active {
-    transform: translateY(-1px) scale(0.98);
-  }
+  .cta-btn:active { transform: translateY(-1px) scale(0.98); }
+
   @keyframes pulse-glow {
-    0% { box-shadow: 0 8px 24px rgba(46, 230, 166, 0.25); }
-    50% { box-shadow: 0 8px 32px rgba(46, 230, 166, 0.55); }
-    100% { box-shadow: 0 8px 24px rgba(46, 230, 166, 0.25); }
+    0% { box-shadow: 0 0 20px rgba(46, 230, 122, 0.4); }
+    50% { box-shadow: 0 0 42px rgba(46, 230, 122, 0.8); }
+    100% { box-shadow: 0 0 20px rgba(46, 230, 122, 0.4); }
   }
+
   .cta-hint {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 12px;
     color: #6b7494;
   }
+
   .features {
-    max-width: 460px;
+    max-width: 440px;
     width: 100%;
     margin: 40px 20px 0;
     display: flex;
@@ -152,19 +205,21 @@ src="https://www.facebook.com/tr?id=2910458736020350&ev=PageView&noscript=1"
   }
   .feature::before {
     content: "✓";
-    color: #2ee6a6;
+    color: #2ee67a;
     font-weight: 800;
   }
+
   .disclaimer {
     max-width: 500px;
-    margin: 40px 20px 12px;
+    margin: 40px 24px 12px;
     font-size: 11px;
     line-height: 1.6;
     color: #6b7494;
     text-align: center;
   }
+
   footer {
-    margin: 12px 0 30px;
+    margin: 12px 0 20px;
     font-size: 12px;
     color: #55597a;
     display: flex;
@@ -175,26 +230,35 @@ src="https://www.facebook.com/tr?id=2910458736020350&ev=PageView&noscript=1"
 </head>
 <body>
 
+  <div class="chart-icon">
+    <div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+
   <div class="badge">OFFICIAL TELEGRAM CHANNEL</div>
 
-  <img class="logo" src="https://via.placeholder.com/96x96/1a2036/2ee6a6?text=LOGO" alt="Channel Logo">
+  <div class="avatar-wrap">
+    <img src="logo.jpg" alt="Trader Munaaf">
+  </div>
 
-  <h1>TRADER PRO</h1>
-  <div class="subtitle">Live Market Analysis &amp; Trade Setups</div>
+  <h1><span class="white">TRADER</span> <span class="green">MUNAAF</span></h1>
+  <div class="subtitle">LIVE MARKET ANALYSIS &amp; TRADE SETUPS</div>
 
   <p class="description">
     Get access to daily chart breakdowns, key price levels, and disciplined
-    trading strategies direct from <b>Trader Pro</b>.
+    trading strategies direct from <b>Trader Munaaf</b>.
   </p>
 
   <div class="stats">
-    <div class="stat"><b>Daily</b><span>Setups</span></div>
-    <div class="stat"><b>Live</b><span>Market Talk</span></div>
-    <div class="stat"><b>Free</b><span>To Access</span></div>
+    <div class="stat"><b>Daily</b><span>SETUPS</span></div>
+    <div class="stat"><b>Live</b><span>MARKET TALK</span></div>
+    <div class="stat"><b>Free</b><span>TO ACCESS</span></div>
   </div>
 
   <a class="cta-btn" href="https://t.me/+EMwQiEXRTOBhNzRl" target="_blank" rel="noopener">
-    Join Trader Pro
+    <span class="cta-icon">
+      <svg viewBox="0 0 24 24"><path d="M21.9 2.1c-.3-.2-.7-.3-1-.1L1.6 10.4c-.5.2-.8.7-.7 1.3.1.5.5.9 1 1l4.9 1.5 2 6.3c.1.4.5.7.9.7.3 0 .6-.1.8-.4l2.7-3.2 4.9 3.6c.2.2.5.2.8.2.2 0 .4 0 .6-.1.4-.2.6-.5.7-.9L22.5 3c.1-.4-.1-.7-.6-.9zM8.6 13.7l-3.6-1.1L18 5.6l-9.4 8.1zm.9 1.7l1.4-1.2 1.7 1.2-1.5 1.8-1.6-1.8zm5.6 2.6l-4.1-3 8-6.9-3.9 9.9z"/></svg>
+    </span>
+    Join Trader Munaaf
   </a>
   <div class="cta-hint">Tap to open in Telegram</div>
 
